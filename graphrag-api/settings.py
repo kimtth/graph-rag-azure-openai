@@ -1,7 +1,7 @@
-from pydantic_settings import BaseSettings
+from pydantic import BaseModel
 import yaml
 
-class Settings(BaseSettings):
+class Settings(BaseModel):
     GRAPHRAG_CLAIM_EXTRACTION_ENABLED: bool
     INPUT_DIR: str
     COMMUNITY_LEVEL: int
